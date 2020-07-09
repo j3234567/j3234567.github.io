@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <meta charset="UTF-8">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+        
+          <div class="col-12 my-4"><span class="h3">1. 在過去一個月內，您是否有小便解不乾淨的感覺？</span></div>
+          <button class="col-12 btn btn-success my-2 btn-lg query">0 完全沒有</button>
+          <button class="col-12 btn btn-success my-2 btn-lg query">1 五次內不到一次（偶爾）</button>
+          <button class="col-12 btn btn-success my-2 btn-lg query">2 不超過一半（三不五時）</button>
+          <button class="col-12 btn btn-success my-2 btn-lg query">3 大約一半（一半一半）</button>
+          <button class="col-12 btn btn-success my-2 btn-lg query">4 超過一半次數（經常）</button>
+          <button class="col-12 btn btn-success my-2 btn-lg query">5 都是如此（總是）</button>
+          <button class="col-12 btn btn-primary my-2 submit">送出</button>
+
+
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+    
+</body>
+<script>
+  /*control button selection*/
+ $(".query").click(function(e){
+   $(this).parents().find("button.query").css({
+     background:"rgb(40, 167, 69)",
+   })
+   $(this).css({
+     background:"black",
+   })
+ })
+
+ /*submit function*/
+
+
+</script>
+</html>
